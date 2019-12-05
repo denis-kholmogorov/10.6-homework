@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3846f33-b199-42fd-bc4c-53c36a3b0411" name="Default Changelist" comment="" />
+    <list default="true" id="b3846f33-b199-42fd-bc4c-53c36a3b0411" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CourseType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Courses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Students.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,13 +23,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1UYw2qtOEm2qSRTPv7azmrCkrxC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -28,6 +42,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
   </component>
   <component name="RecentsManager">
@@ -75,26 +90,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="899" y="194" width="378" height="582" key="#com.intellij.ide.util.MemberChooser" timestamp="1575547661045">
+    <state x="899" y="194" width="378" height="582" key="#com.intellij.ide.util.MemberChooser" timestamp="1575552532632">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state x="899" y="194" width="378" height="582" key="#com.intellij.ide.util.MemberChooser/0.38.1680.1012@0.38.1680.1012" timestamp="1575547661045" />
-    <state width="1177" height="210" key="GridCell.Tab.0.bottom" timestamp="1575549390202">
+    <state x="899" y="194" width="378" height="582" key="#com.intellij.ide.util.MemberChooser/0.38.1680.1012@0.38.1680.1012" timestamp="1575552532632" />
+    <state width="1177" height="210" key="GridCell.Tab.0.bottom" timestamp="1575552723743">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state width="1177" height="210" key="GridCell.Tab.0.bottom/0.38.1680.1012@0.38.1680.1012" timestamp="1575549390202" />
-    <state width="1177" height="210" key="GridCell.Tab.0.center" timestamp="1575549390201">
+    <state width="1177" height="210" key="GridCell.Tab.0.bottom/0.38.1680.1012@0.38.1680.1012" timestamp="1575552723743" />
+    <state width="1177" height="210" key="GridCell.Tab.0.center" timestamp="1575552723742">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state width="1177" height="210" key="GridCell.Tab.0.center/0.38.1680.1012@0.38.1680.1012" timestamp="1575549390201" />
-    <state width="1177" height="210" key="GridCell.Tab.0.left" timestamp="1575549390201">
+    <state width="1177" height="210" key="GridCell.Tab.0.center/0.38.1680.1012@0.38.1680.1012" timestamp="1575552723742" />
+    <state width="1177" height="210" key="GridCell.Tab.0.left" timestamp="1575552723741">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state width="1177" height="210" key="GridCell.Tab.0.left/0.38.1680.1012@0.38.1680.1012" timestamp="1575549390201" />
-    <state width="1177" height="210" key="GridCell.Tab.0.right" timestamp="1575549390201">
+    <state width="1177" height="210" key="GridCell.Tab.0.left/0.38.1680.1012@0.38.1680.1012" timestamp="1575552723741" />
+    <state width="1177" height="210" key="GridCell.Tab.0.right" timestamp="1575552723743">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state width="1177" height="210" key="GridCell.Tab.0.right/0.38.1680.1012@0.38.1680.1012" timestamp="1575549390201" />
+    <state width="1177" height="210" key="GridCell.Tab.0.right/0.38.1680.1012@0.38.1680.1012" timestamp="1575552723743" />
     <state x="639" y="86" width="581" height="730" key="refactoring.ChangeSignatureDialog" timestamp="1575548986832">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>

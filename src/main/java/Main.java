@@ -15,10 +15,10 @@ public class Main
 
         Session session = sessionFactory.openSession();
         Students student = session.get(Students.class, 5);
+        Courses course = session.get(Courses.class, 5);
 
-        System.out.println(student.getName());
-
-
+        System.out.println("Имя Фамилия студента " + student.getName());
+        System.out.println("Название курса " + course.getName());
 
         sessionFactory.close();
     }

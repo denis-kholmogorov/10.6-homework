@@ -1,8 +1,5 @@
 import javax.persistence.*;
-
-import java.time.temporal.Temporal;
 import java.util.Date;
-
 
 @Entity
 @Table(name = "Students")
