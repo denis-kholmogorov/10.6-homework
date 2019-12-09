@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3846f33-b199-42fd-bc4c-53c36a3b0411" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CourseType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Courses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/PurchaseList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Subscriptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Teachers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CourseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/CourseType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Courses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Courses.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Students.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Students.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CourseType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Courses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Students.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,9 +50,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="entities" />
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
@@ -87,37 +98,69 @@
       <option name="presentableId" value="Default" />
       <updated>1575546632659</updated>
     </task>
+    <task id="LOCAL-00001" summary="version 2.0">
+      <created>1575552761396</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575552761396</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="version 2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 2.0" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="899" y="194" width="378" height="582" key="#com.intellij.ide.util.MemberChooser" timestamp="1575552532632">
+    <state x="899" y="194" width="378" height="582" key="#com.intellij.ide.util.MemberChooser" timestamp="1575889231604">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state x="899" y="194" width="378" height="582" key="#com.intellij.ide.util.MemberChooser/0.38.1680.1012@0.38.1680.1012" timestamp="1575552532632" />
+    <state x="899" y="194" width="378" height="582" key="#com.intellij.ide.util.MemberChooser/0.38.1680.1012@0.38.1680.1012" timestamp="1575889231604" />
+    <state x="512" y="355" width="528" height="433" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1575625470901">
+      <screen x="0" y="38" width="1680" height="1012" />
+    </state>
+    <state x="512" y="355" width="528" height="433" key="#com.intellij.ide.util.PackageChooserDialog/0.38.1680.1012@0.38.1680.1012" timestamp="1575625470901" />
+    <state x="567" y="438" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1575625472414">
+      <screen x="0" y="38" width="1680" height="1012" />
+    </state>
+    <state x="567" y="438" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.38.1680.1012@0.38.1680.1012" timestamp="1575625472414" />
     <state x="701" y="53" width="699" height="795" key="CommitChangelistDialog2" timestamp="1575552760812">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
     <state x="701" y="53" width="699" height="795" key="CommitChangelistDialog2/0.38.1680.1012@0.38.1680.1012" timestamp="1575552760812" />
-    <state width="1177" height="210" key="GridCell.Tab.0.bottom" timestamp="1575552723743">
+    <state x="833" y="194" width="428" height="502" key="FileChooserDialogImpl" timestamp="1575555192612">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state width="1177" height="210" key="GridCell.Tab.0.bottom/0.38.1680.1012@0.38.1680.1012" timestamp="1575552723743" />
-    <state width="1177" height="210" key="GridCell.Tab.0.center" timestamp="1575552723742">
+    <state x="833" y="194" width="428" height="502" key="FileChooserDialogImpl/0.38.1680.1012@0.38.1680.1012" timestamp="1575555192612" />
+    <state width="1634" height="182" key="GridCell.Tab.0.bottom" timestamp="1575890038697">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state width="1177" height="210" key="GridCell.Tab.0.center/0.38.1680.1012@0.38.1680.1012" timestamp="1575552723742" />
-    <state width="1177" height="210" key="GridCell.Tab.0.left" timestamp="1575552723741">
+    <state width="1634" height="182" key="GridCell.Tab.0.bottom/0.38.1680.1012@0.38.1680.1012" timestamp="1575890038697" />
+    <state width="1634" height="182" key="GridCell.Tab.0.center" timestamp="1575890038696">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state width="1177" height="210" key="GridCell.Tab.0.left/0.38.1680.1012@0.38.1680.1012" timestamp="1575552723741" />
-    <state width="1177" height="210" key="GridCell.Tab.0.right" timestamp="1575552723743">
+    <state width="1634" height="182" key="GridCell.Tab.0.center/0.38.1680.1012@0.38.1680.1012" timestamp="1575890038696" />
+    <state width="1634" height="182" key="GridCell.Tab.0.left" timestamp="1575890038696">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state width="1177" height="210" key="GridCell.Tab.0.right/0.38.1680.1012@0.38.1680.1012" timestamp="1575552723743" />
-    <state x="639" y="86" width="581" height="730" key="refactoring.ChangeSignatureDialog" timestamp="1575548986832">
+    <state width="1634" height="182" key="GridCell.Tab.0.left/0.38.1680.1012@0.38.1680.1012" timestamp="1575890038696" />
+    <state width="1634" height="182" key="GridCell.Tab.0.right" timestamp="1575890038696">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state x="639" y="86" width="581" height="730" key="refactoring.ChangeSignatureDialog/0.38.1680.1012@0.38.1680.1012" timestamp="1575548986832" />
+    <state width="1634" height="182" key="GridCell.Tab.0.right/0.38.1680.1012@0.38.1680.1012" timestamp="1575890038696" />
+    <state x="544" y="223" key="com.intellij.ide.util.TipDialog" timestamp="1575876111369">
+      <screen x="0" y="38" width="1680" height="1012" />
+    </state>
+    <state x="544" y="223" key="com.intellij.ide.util.TipDialog/0.38.1680.1012@0.38.1680.1012" timestamp="1575876111369" />
+    <state x="429" y="68" width="1243" height="765" key="new project wizard" timestamp="1575555194318">
+      <screen x="0" y="38" width="1680" height="1012" />
+    </state>
+    <state x="429" y="68" width="1243" height="765" key="new project wizard/0.38.1680.1012@0.38.1680.1012" timestamp="1575555194318" />
+    <state x="639" y="86" width="581" height="730" key="refactoring.ChangeSignatureDialog" timestamp="1575882041588">
+      <screen x="0" y="38" width="1680" height="1012" />
+    </state>
+    <state x="639" y="86" width="581" height="730" key="refactoring.ChangeSignatureDialog/0.38.1680.1012@0.38.1680.1012" timestamp="1575882041588" />
     <state x="973" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1575547505539">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>

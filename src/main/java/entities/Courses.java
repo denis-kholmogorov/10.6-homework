@@ -1,4 +1,7 @@
+package entities;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "Courses")
@@ -11,14 +14,15 @@ public class Courses
     private String name;
 
     private int duration;
+
     @Enumerated(EnumType.STRING)
     @Column(columnDefinition = "enum")
     private CourseType type;
 
     private String description;
 
-    @Column(name = "teacher_id")
-    private int teacherId;
+    @ManyToOne(cascade = CascadeType.ALL)
+    private Teachers teacher;
 
     @Column(name = "students_count")
     private int studentsCount;
@@ -28,6 +32,14 @@ public class Courses
     @Column(name = "price_per_hour")
     private float pricePerHour;
 
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "Subscriptions",
+        joinColumns = {@JoinColumn(name = "course_id")},
+        inverseJoinColumns = {@JoinColumn(name = "student_id")})
+    private List<Students> students;
+
+    public Courses(){
+}
 
     public int getId() {
         return id;
@@ -69,12 +81,12 @@ public class Courses
         this.description = description;
     }
 
-    public int getTeacherId() {
-        return teacherId;
+    public Teachers getTeacherId() {
+        return teacher;
     }
 
-    public void setTeacherId(int teacherId) {
-        this.teacherId = teacherId;
+    public void setTeacherId(Teachers teacherId) {
+        this.teacher = teacherId;
     }
 
     public int getStudentsCount() {
@@ -101,7 +113,13 @@ public class Courses
         this.pricePerHour = pricePerHour;
     }
 
+    public List<Students> getStudents() {
+        return students;
+    }
 
+    public void setStudents(List<Students> students) {
+        this.students = students;
+    }
 
 
 }

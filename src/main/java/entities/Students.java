@@ -1,5 +1,8 @@
+package entities;
+
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "Students")
@@ -15,6 +18,16 @@ public class Students
 
     @Column(name = "registration_date", columnDefinition = "DATE")
     private Date registrationDay;
+
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "Subscriptions",
+        joinColumns = {@JoinColumn(name = "student_id")},
+        inverseJoinColumns = {@JoinColumn(name = "course_id")})
+    private List<Courses> courses;
+
+    public Students() {
+    }
 
     public void setId(int id) {
         this.id = id;
@@ -48,4 +61,11 @@ public class Students
         return registrationDay;
     }
 
+    public List<Courses> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(List<Courses> courses) {
+        this.courses = courses;
+    }
 }
