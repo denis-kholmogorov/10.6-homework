@@ -1,6 +1,7 @@
 package entities;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "Teachers")
@@ -15,6 +16,9 @@ public class Teachers
     private int salary;
 
     private int age;
+
+    @OneToMany(mappedBy = "teacher", cascade=CascadeType.ALL)
+    private Set<Courses> coursesSet;
 
     public int getId() {
         return id;
@@ -48,5 +52,11 @@ public class Teachers
         this.age = age;
     }
 
+    public Set<Courses> getCoursesSet() {
+        return coursesSet;
+    }
 
+    public void setCoursesSet(Set<Courses> coursesSet) {
+        this.coursesSet = coursesSet;
+    }
 }

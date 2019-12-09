@@ -1,6 +1,7 @@
 package entities;
 
 import javax.persistence.*;
+import javax.persistence.criteria.CriteriaBuilder;
 import java.util.List;
 
 @Entity
@@ -9,7 +10,7 @@ public class Courses
 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     private String name;
 
@@ -21,18 +22,18 @@ public class Courses
 
     private String description;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY)
     private Teachers teacher;
 
-    @Column(name = "students_count")
-    private int studentsCount;
+    @Column(name = "students_count", nullable = true)
+    private Integer studentsCount;
 
     private int price;
 
     @Column(name = "price_per_hour")
     private float pricePerHour;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinTable(name = "Subscriptions",
         joinColumns = {@JoinColumn(name = "course_id")},
         inverseJoinColumns = {@JoinColumn(name = "student_id")})
