@@ -18,20 +18,18 @@ public class Main
         StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
         Metadata metadata = new MetadataSources(registry).getMetadataBuilder().build();
         SessionFactory sessionFactory = metadata.getSessionFactoryBuilder().build();
-
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Courses> query = builder.createQuery(Courses.class);
-        Root<Courses> root = query.from(Courses.class);
+        CriteriaQuery<Course> query = builder.createQuery(Course.class);
+        Root<Course> root = query.from(Course.class);
         query.select(root);
-        /*List<Courses> coursesList = session.createQuery(query).getResultList();
+        List<Course> coursesList = session.createQuery(query).getResultList();
         coursesList.forEach(c ->{
             System.out.println(c.getName());
-        });*/
-
-        Courses course = session.get(Courses.class, 2);
-        System.out.println(course.getTeacherId().getName());
-
+        });
+        Subscriptions subscription = session.get(Subscriptions.class, 20);
+        System.out.println("Имя студента данной подписки -> " + subscription.getStudent().getName());
+        System.out.println("Имя учителя данного курса -> " + subscription.getCourseId().getTeacherId().getName());
 
         session.close();
         sessionFactory.close();

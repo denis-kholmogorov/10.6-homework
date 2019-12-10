@@ -21,8 +21,8 @@
         <!-- Drop and re-create the database schema on startup -->
         <property name="hbm2ddl.auto">validate</property>
 
-        <mapping class="entities.Students"></mapping>
-        <mapping class="entities.Courses"></mapping>
+        <mapping class="entities.Student"></mapping>
+        <mapping class="entities.Course"></mapping>
         <mapping class="entities.Teachers"></mapping>
         <mapping class="entities.Subscriptions"></mapping>
         <mapping class="entities.PurchaseList"></mapping>

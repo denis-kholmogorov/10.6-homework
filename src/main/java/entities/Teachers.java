@@ -18,7 +18,7 @@ public class Teachers
     private int age;
 
     @OneToMany(mappedBy = "teacher", cascade=CascadeType.ALL)
-    private Set<Courses> coursesSet;
+    private Set<Course> coursesSet;
 
     public int getId() {
         return id;
@@ -52,11 +52,11 @@ public class Teachers
         this.age = age;
     }
 
-    public Set<Courses> getCoursesSet() {
+    public Set<Course> getCoursesSet() {
         return coursesSet;
     }
 
-    public void setCoursesSet(Set<Courses> coursesSet) {
+    public void setCoursesSet(Set<Course> coursesSet) {
         this.coursesSet = coursesSet;
     }
 }

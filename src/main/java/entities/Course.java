@@ -1,12 +1,11 @@
 package entities;
 
 import javax.persistence.*;
-import javax.persistence.criteria.CriteriaBuilder;
 import java.util.List;
 
 @Entity
 @Table(name = "Courses")
-public class Courses
+public class Course
 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -37,9 +36,9 @@ public class Courses
     @JoinTable(name = "Subscriptions",
         joinColumns = {@JoinColumn(name = "course_id")},
         inverseJoinColumns = {@JoinColumn(name = "student_id")})
-    private List<Students> students;
+    private List<Student> students;
 
-    public Courses(){
+    public Course(){
 }
 
     public int getId() {
@@ -114,11 +113,11 @@ public class Courses
         this.pricePerHour = pricePerHour;
     }
 
-    public List<Students> getStudents() {
+    public List<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(List<Students> students) {
+    public void setStudents(List<Student> students) {
         this.students = students;
     }
 

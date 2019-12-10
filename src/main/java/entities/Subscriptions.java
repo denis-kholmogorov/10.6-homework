@@ -9,30 +9,31 @@ public class Subscriptions
 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
-    @Column(name = "student_id")
-    private Integer student;
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Student student;
 
-    @Column(name = "course_id")
-    private Integer course;
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Course course;
 
     @Column(name = "subscription_date", columnDefinition = "DATE")
     private Date subscriptionDate;
 
 
-    public Integer getStudent() {
+    public Student getStudent() {
         return student;
     }
 
-    public void setStudent(Integer student) {
+    public void setStudent(Student student) {
         this.student = student;
     }
 
-    public Integer getCourseId() {
+    public Course getCourseId() {
         return course;
     }
 
-    public void setCourseId(Integer courseId) {
+    public void setCourseId(Course courseId) {
         this.course = courseId;
     }
 

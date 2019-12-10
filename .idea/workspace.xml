@@ -4,11 +4,14 @@
     <list default="true" id="b3846f33-b199-42fd-bc4c-53c36a3b0411" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Courses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Courses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Courses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Subscriptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Subscriptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Teachers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/sql1.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Courses.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Courses.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Teachers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Teachers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Subscriptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Subscriptions.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +120,10 @@
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
     <state x="567" y="438" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.38.1680.1012@0.38.1680.1012" timestamp="1575625472414" />
+    <state x="0" y="38" width="528" height="1002" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575966813941">
+      <screen x="0" y="38" width="1680" height="1012" />
+    </state>
+    <state x="0" y="38" width="528" height="1002" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.38.1680.1012@0.38.1680.1012" timestamp="1575966813941" />
     <state x="701" y="53" width="699" height="795" key="CommitChangelistDialog2" timestamp="1575552760812">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
@@ -125,22 +132,22 @@
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
     <state x="833" y="194" width="428" height="502" key="FileChooserDialogImpl/0.38.1680.1012@0.38.1680.1012" timestamp="1575555192612" />
-    <state width="1634" height="182" key="GridCell.Tab.0.bottom" timestamp="1575895173848">
+    <state width="1634" height="182" key="GridCell.Tab.0.bottom" timestamp="1575966694687">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state width="1634" height="182" key="GridCell.Tab.0.bottom/0.38.1680.1012@0.38.1680.1012" timestamp="1575895173848" />
-    <state width="1634" height="182" key="GridCell.Tab.0.center" timestamp="1575895173848">
+    <state width="1634" height="182" key="GridCell.Tab.0.bottom/0.38.1680.1012@0.38.1680.1012" timestamp="1575966694687" />
+    <state width="1634" height="182" key="GridCell.Tab.0.center" timestamp="1575966694687">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state width="1634" height="182" key="GridCell.Tab.0.center/0.38.1680.1012@0.38.1680.1012" timestamp="1575895173848" />
-    <state width="1634" height="182" key="GridCell.Tab.0.left" timestamp="1575895173847">
+    <state width="1634" height="182" key="GridCell.Tab.0.center/0.38.1680.1012@0.38.1680.1012" timestamp="1575966694687" />
+    <state width="1634" height="182" key="GridCell.Tab.0.left" timestamp="1575966694686">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state width="1634" height="182" key="GridCell.Tab.0.left/0.38.1680.1012@0.38.1680.1012" timestamp="1575895173847" />
-    <state width="1634" height="182" key="GridCell.Tab.0.right" timestamp="1575895173848">
+    <state width="1634" height="182" key="GridCell.Tab.0.left/0.38.1680.1012@0.38.1680.1012" timestamp="1575966694686" />
+    <state width="1634" height="182" key="GridCell.Tab.0.right" timestamp="1575966694687">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state width="1634" height="182" key="GridCell.Tab.0.right/0.38.1680.1012@0.38.1680.1012" timestamp="1575895173848" />
+    <state width="1634" height="182" key="GridCell.Tab.0.right/0.38.1680.1012@0.38.1680.1012" timestamp="1575966694687" />
     <state x="544" y="223" key="com.intellij.ide.util.TipDialog" timestamp="1575876111369">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
