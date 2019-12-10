@@ -5,6 +5,7 @@ import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.query.Query;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -19,18 +20,17 @@ public class Main
         Metadata metadata = new MetadataSources(registry).getMetadataBuilder().build();
         SessionFactory sessionFactory = metadata.getSessionFactoryBuilder().build();
         Session session = sessionFactory.openSession();
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Course> query = builder.createQuery(Course.class);
-        Root<Course> root = query.from(Course.class);
-        query.select(root);
-        List<Course> coursesList = session.createQuery(query).getResultList();
-        coursesList.forEach(c ->{
-            System.out.println(c.getName());
-        });
-        Subscriptions subscription = session.get(Subscriptions.class, 20);
-        System.out.println("Имя студента данной подписки -> " + subscription.getStudent().getName());
-        System.out.println("Имя учителя данного курса -> " + subscription.getCourseId().getTeacherId().getName());
+        String hql = "select Student.id as student_id, Courses.id FROM PurchaseList JOIN Students ON Students.name = PurchaseList.student_name JOIN Courses ON Courses.name = PurchaseList.course_name";
+        session.beginTransaction();
+        Query id = session.createQuery(hql);
+        System.out.println(id.getResultList());
+//        StudentsAndCourses studentsAndCourse = new StudentsAndCourses();
+//        studentsAndCourse.setCourseId(session.get(Course.class, 1));
+//        studentsAndCourse.setStudentId(session.get(Student.class, 1));
+//        session.save(studentsAndCourse);
 
+
+        session.getTransaction().commit();
         session.close();
         sessionFactory.close();
 

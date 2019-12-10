@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3846f33-b199-42fd-bc4c-53c36a3b0411" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/StudentsAndCourses.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Courses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Subscriptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Subscriptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Teachers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/sql1.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Subscriptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Subscriptions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,10 +108,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="version 2.0" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="899" y="194" width="378" height="582" key="#com.intellij.ide.util.MemberChooser" timestamp="1575894308517">
+    <state x="899" y="194" width="378" height="582" key="#com.intellij.ide.util.MemberChooser" timestamp="1575974557950">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state x="899" y="194" width="378" height="582" key="#com.intellij.ide.util.MemberChooser/0.38.1680.1012@0.38.1680.1012" timestamp="1575894308517" />
+    <state x="899" y="194" width="378" height="582" key="#com.intellij.ide.util.MemberChooser/0.38.1680.1012@0.38.1680.1012" timestamp="1575974557950" />
     <state x="512" y="355" width="528" height="433" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1575625470901">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
@@ -132,22 +132,22 @@
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
     <state x="833" y="194" width="428" height="502" key="FileChooserDialogImpl/0.38.1680.1012@0.38.1680.1012" timestamp="1575555192612" />
-    <state width="1634" height="182" key="GridCell.Tab.0.bottom" timestamp="1575966694687">
+    <state width="1634" height="182" key="GridCell.Tab.0.bottom" timestamp="1575978651496">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state width="1634" height="182" key="GridCell.Tab.0.bottom/0.38.1680.1012@0.38.1680.1012" timestamp="1575966694687" />
-    <state width="1634" height="182" key="GridCell.Tab.0.center" timestamp="1575966694687">
+    <state width="1634" height="182" key="GridCell.Tab.0.bottom/0.38.1680.1012@0.38.1680.1012" timestamp="1575978651496" />
+    <state width="1634" height="182" key="GridCell.Tab.0.center" timestamp="1575978651493">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state width="1634" height="182" key="GridCell.Tab.0.center/0.38.1680.1012@0.38.1680.1012" timestamp="1575966694687" />
-    <state width="1634" height="182" key="GridCell.Tab.0.left" timestamp="1575966694686">
+    <state width="1634" height="182" key="GridCell.Tab.0.center/0.38.1680.1012@0.38.1680.1012" timestamp="1575978651493" />
+    <state width="1634" height="182" key="GridCell.Tab.0.left" timestamp="1575978651493">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state width="1634" height="182" key="GridCell.Tab.0.left/0.38.1680.1012@0.38.1680.1012" timestamp="1575966694686" />
-    <state width="1634" height="182" key="GridCell.Tab.0.right" timestamp="1575966694687">
+    <state width="1634" height="182" key="GridCell.Tab.0.left/0.38.1680.1012@0.38.1680.1012" timestamp="1575978651493" />
+    <state width="1634" height="182" key="GridCell.Tab.0.right" timestamp="1575978651496">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>
-    <state width="1634" height="182" key="GridCell.Tab.0.right/0.38.1680.1012@0.38.1680.1012" timestamp="1575966694687" />
+    <state width="1634" height="182" key="GridCell.Tab.0.right/0.38.1680.1012@0.38.1680.1012" timestamp="1575978651496" />
     <state x="544" y="223" key="com.intellij.ide.util.TipDialog" timestamp="1575876111369">
       <screen x="0" y="38" width="1680" height="1012" />
     </state>

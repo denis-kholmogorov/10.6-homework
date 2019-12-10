@@ -5,8 +5,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "Courses")
-public class Course
-{
+public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -34,12 +33,13 @@ public class Course
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinTable(name = "Subscriptions",
-        joinColumns = {@JoinColumn(name = "course_id")},
-        inverseJoinColumns = {@JoinColumn(name = "student_id")})
-    private List<Student> students;
+            joinColumns = {@JoinColumn(name = "course_id")},
+            inverseJoinColumns = {@JoinColumn(name = "student_id")})
+    private List<Student> studentsFromSubscrip;
 
-    public Course(){
-}
+    public Course() {
+    }
+
 
     public int getId() {
         return id;
@@ -114,12 +114,11 @@ public class Course
     }
 
     public List<Student> getStudents() {
-        return students;
+        return studentsFromSubscrip;
     }
 
     public void setStudents(List<Student> students) {
-        this.students = students;
+        this.studentsFromSubscrip = students;
     }
-
 
 }

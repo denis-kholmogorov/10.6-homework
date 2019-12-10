@@ -26,5 +26,6 @@
         <mapping class="entities.Teachers"></mapping>
         <mapping class="entities.Subscriptions"></mapping>
         <mapping class="entities.PurchaseList"></mapping>
+        <mapping class="entities.StudentsAndCourses"></mapping>
     </session-factory>
 </hibernate-configuration>

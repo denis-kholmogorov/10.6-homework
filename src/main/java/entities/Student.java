@@ -23,7 +23,8 @@ public class Student
     @JoinTable(name = "Subscriptions",
         joinColumns = {@JoinColumn(name = "student_id")},
         inverseJoinColumns = {@JoinColumn(name = "course_id")})
-    private List<Course> courses;
+    private List<Course> coursesFromSubcrip;
+
 
     public Student() {
     }
@@ -60,11 +61,11 @@ public class Student
         return registrationDay;
     }
 
-    public List<Course> getCourses() {
-        return courses;
+    public List<Course> getCoursesFromSubcrip() {
+        return coursesFromSubcrip;
     }
 
-    public void setCourses(List<Course> courses) {
-        this.courses = courses;
+    public void setCoursesFromSubcrip(List<Course> coursesFromSubcrip) {
+        this.coursesFromSubcrip = coursesFromSubcrip;
     }
 }
