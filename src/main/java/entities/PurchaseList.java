@@ -1,7 +1,4 @@
 package entities;
-
-import org.hibernate.annotations.Generated;
-
 import javax.persistence.*;
 import java.util.Date;
 
@@ -12,6 +9,7 @@ public class PurchaseList
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
     @Column(name = "student_name")
     private String studentName;

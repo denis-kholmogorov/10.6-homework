@@ -1,5 +1,4 @@
 package entities;
-
 import javax.persistence.*;
 
 @Entity
@@ -16,10 +15,7 @@ public class StudentsAndCourses
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Course course;
 
-
-    public int getId() {
-        return id;
-    }
+    public int getId() {return id;}
 
     public void setId(int id) {
         this.id = id;
@@ -29,9 +25,7 @@ public class StudentsAndCourses
         return student;
     }
 
-    public void setStudentId(Student student) {
-        this.student = student;
-    }
+    public void setStudentId(Student student) {this.student = student;}
 
     public Course getCourseId() {
         return course;
